@@ -16,16 +16,21 @@ class App extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    this.setState({ isSubmitted: true })
+    this.setState({ isSubmitted: true });
+  }
+
+  handleRating = (e) => {
+    const value = e.target.innerText;
+    this.setState({ rating: value });
   }
 
   render() {
     return (this.state.isSubmitted === false) ?
       (<main className="App">
-        <SubmitCard handleSubmit={this.handleSubmit} />
+        <SubmitCard handleRating={this.handleRating} handleSubmit={this.handleSubmit} />
       </main>) : 
       (<main className="App">
-        <ThankYouCard />
+        <ThankYouCard rating={this.state.rating} />
       </main>);
   }
 }

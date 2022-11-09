@@ -1,8 +1,8 @@
 
-const ThankYouCard = () => {
+const ThankYouCard = ({ rating }) => {
   return (
     <div>
-      <h1>You selected RATING out of 5</h1>
+      <h1>You selected {rating} out of 5</h1>
 
       <h2>Thank you!</h2>
 

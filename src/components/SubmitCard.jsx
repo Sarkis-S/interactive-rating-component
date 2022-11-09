@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SubmitCard = ({ handleSubmit }) => {
+const SubmitCard = ({ handleRating, handleSubmit }) => {
   return (
     <div className="submit-container">
       <span className="fa fa-star checked"></span><br />
@@ -9,7 +9,13 @@ const SubmitCard = ({ handleSubmit }) => {
 
       <h2>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</h2>
 
-      <p>1 2 3 4 5</p><br/>
+      <p>
+        <button onClick={handleRating}>1</button>
+        <button onClick={handleRating}>2</button>
+        <button onClick={handleRating}>3</button>
+        <button onClick={handleRating}>4</button>
+        <button onClick={handleRating}>5</button>
+      </p><br/>
 
       <button type="submit" onClick={handleSubmit}>Submit</button>
 
