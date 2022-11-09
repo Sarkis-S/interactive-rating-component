@@ -9,5 +9,21 @@
   color: white;
 }
 
+.checked {
+  color: rgb(244, 126, 9);
+}
+.fa-star {
+  font-size: 14px;
+  background-color: gray;
+  border-radius: 15px;
+  padding: 10px;
+}
+.svg {
+  height: 200px;
+  width: auto;
+}
+
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
