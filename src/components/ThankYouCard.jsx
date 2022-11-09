@@ -1,13 +1,13 @@
-// import mySVG from '../images/illustration-thank-you.svg';
 
 const ThankYouCard = () => {
   return (
     <div>
-      <h1>This is the thank you card</h1>
-      {/* <img
-        src={mySVG}
-        alt="triangle with all three sides equal"
-      /> */}
+      <h1>You selected RATING out of 5</h1>
+
+      <h2>Thank you!</h2>
+
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
     </div>
   )
 }
