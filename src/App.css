@@ -1,3 +1,18 @@
+:root {
+  /* Primary */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --lightgrey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+
+  /* Body Copy */
+  --font-size: (paragraph): 15px;
+}
+
 .App {
   background-color: #282c34;
   min-height: 100vh;
@@ -7,14 +22,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Overpass', sans-serif;
 }
 
 .checked {
-  color: rgb(244, 126, 9);
+  color: rgb(244, 140, 36);
 }
 .fa-star {
   font-size: 14px;
-  background-color: gray;
+  background-color: rgb(66, 62, 62);
   border-radius: 15px;
   padding: 10px;
 }
