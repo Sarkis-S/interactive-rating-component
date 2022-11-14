@@ -9,15 +9,17 @@ const SubmitCard = ({ handleRating, handleSubmit }) => {
 
       <h2>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</h2>
 
-      <p>
+      <div className="btn">
         <button onClick={handleRating}>1</button>
         <button onClick={handleRating}>2</button>
         <button onClick={handleRating}>3</button>
         <button onClick={handleRating}>4</button>
         <button onClick={handleRating}>5</button>
-      </p><br/>
+      </div>
 
-      <button type="submit" onClick={handleSubmit}>Submit</button>
+      {/* <br/> */}
+
+      <button className="submit-btn" type="submit" onClick={handleSubmit}>S U B M I T</button>
 
       {/* Rating state end */}
 

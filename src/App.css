@@ -4,7 +4,7 @@
 
   /* Neutral */
   --white: hsl(0, 0%, 100%);
-  --lightgrey: hsl(217, 12%, 63%);
+  --light-grey: hsl(217, 12%, 63%);
   --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
@@ -14,29 +14,68 @@
 }
 
 .App {
-  background-color: #282c34;
+  background-color: var(--very-dark-blue);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 9px;
+  color: var(--light-grey);
+  line-height: 1.5;
   font-family: 'Overpass', sans-serif;
 }
 
+.submit-container {
+  background-color: var(--dark-blue);
+  border-radius: 10px;
+  width: 285px;
+  height: auto;
+  padding: 20px;
+}
+
 .checked {
-  color: rgb(244, 140, 36);
+  color: var(--orange);
 }
 .fa-star {
-  font-size: 14px;
-  background-color: rgb(66, 62, 62);
-  border-radius: 15px;
-  padding: 10px;
+  font-size: 16px;
+  background-color: hsl(213, 21%, 23%);
+  border-radius: 20px;
+  margin: 5px 0;
+  padding: 12px;
 }
-.svg {
-  height: 200px;
-  width: auto;
+
+h1 {
+  font-size: 24px;
+  color: var(--white);
+  line-height: 1;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: hsl(213, 21%, 23%);
+  font-weight: bold;
+  color: var(--light-grey);
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  border: none;
+}
+
+.submit-btn {
+  background-color: var(--orange);
+  border-radius: 20px;
+  width: 100%;
+  font-weight: bold;
+  color: var(--white);
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
