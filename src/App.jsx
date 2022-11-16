@@ -8,26 +8,27 @@ class App extends Component {
     super();
     
     this.state = {
-      rating: 0,
+      rating: 5,
+      isActive: '',
       isSubmitted: false
     }
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
-
     this.setState({ isSubmitted: true });
   }
 
   handleRating = (e) => {
     const value = e.target.innerText;
     this.setState({ rating: value });
+    this.setState({ isActive: e.target.id });
   }
 
   render() {
     return (this.state.isSubmitted === false) ?
       (<main className="App">
-        <SubmitCard handleRating={this.handleRating} handleSubmit={this.handleSubmit} />
+        <SubmitCard isActive={this.state.isActive} handleRating={this.handleRating} handleSubmit={this.handleSubmit} />
       </main>) : 
       (<main className="App">
         <ThankYouCard rating={this.state.rating} />

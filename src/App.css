@@ -67,6 +67,15 @@ button {
   border-radius: 50%;
   border: none;
 }
+button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  cursor: pointer;
+}
+.active {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
 
 .submit-btn {
   background-color: var(--orange);
@@ -76,6 +85,11 @@ button {
   color: var(--white);
   margin-top: 10px;
   margin-bottom: 15px;
+}
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  cursor: pointer;
 }
 
 .attribution { font-size: 11px; text-align: center; }

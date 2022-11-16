@@ -1,6 +1,7 @@
 import React from 'react';
 
-const SubmitCard = ({ handleRating, handleSubmit }) => {
+const SubmitCard = ({ handleRating, handleSubmit, isActive }) => {
+  console.log('From SubmitCard:', isActive);
   return (
     <div className="submit-container">
       <span className="fa fa-star checked"></span><br />
@@ -10,14 +11,28 @@ const SubmitCard = ({ handleRating, handleSubmit }) => {
       <h2>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</h2>
 
       <div className="btn">
-        <button onClick={handleRating}>1</button>
-        <button onClick={handleRating}>2</button>
-        <button onClick={handleRating}>3</button>
-        <button onClick={handleRating}>4</button>
-        <button onClick={handleRating}>5</button>
+        <button
+          id={'1'}
+          className={isActive === '1' ? 'active' : undefined}
+          onClick={handleRating}>1
+        </button>
+        <button id={'2'}
+          className={isActive === '2' ? 'active' : undefined}
+          onClick={handleRating}>2
+        </button>
+        <button id={'3'}
+          className={isActive === '3' ? 'active' : undefined}
+          onClick={handleRating}>3
+        </button>
+        <button id={'4'}
+          className={isActive === '4' ? 'active' : undefined}
+          onClick={handleRating}>4
+        </button>
+        <button id={'5'}
+          className={isActive === '5' ? 'active' : undefined}
+          onClick={handleRating}>5
+        </button>
       </div>
-
-      {/* <br/> */}
 
       <button className="submit-btn" type="submit" onClick={handleSubmit}>S U B M I T</button>
 
