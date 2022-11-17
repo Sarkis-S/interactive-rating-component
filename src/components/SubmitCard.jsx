@@ -1,7 +1,6 @@
 import React from 'react';
 
 const SubmitCard = ({ handleRating, handleSubmit, isActive }) => {
-  console.log('From SubmitCard:', isActive);
   return (
     <div className="submit-container">
       <span className="fa fa-star checked"></span><br />
