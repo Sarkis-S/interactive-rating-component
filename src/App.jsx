@@ -25,14 +25,12 @@ class App extends Component {
     this.setState({ isActive: e.target.id });
   }
 
+  // The render method will return 1 of 2 components depending if the user submitted a rating or not
+  // We are using a ternary operator here. By default isSubmitted is false on line 13
   render() {
     return (this.state.isSubmitted === false) ?
-      (<main className="App">
-        <SubmitCard isActive={this.state.isActive} handleRating={this.handleRating} handleSubmit={this.handleSubmit} />
-      </main>) : 
-      (<main className="App">
-        <ThankYouCard rating={this.state.rating} />
-      </main>);
+      (<SubmitCard isActive={this.state.isActive} handleRating={this.handleRating} handleSubmit={this.handleSubmit} />) : 
+      (<ThankYouCard rating={this.state.rating} />);
   }
 }
 
