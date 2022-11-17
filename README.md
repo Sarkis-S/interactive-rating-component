@@ -70,6 +70,17 @@ handleRating = (e) => {
 You can see that by clicking the rating button this sets the 'isActive' state to the target ID from my button.
 By doing this, the ID keeps track of which element is currently clicked and setting that element to 'active'.
 
+Then the CSS is applied:
+
+```
+.active {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+```
+
+If you're working on this challenge and need clarification. Let me know!
+
 ## Author
 
 - Frontend Mentor - [@Sarkis-S](https://www.frontendmentor.io/profile/Sarkis-S)
