@@ -1,3 +1,4 @@
+
 :root {
   /* Primary */
   --orange: hsl(25, 97%, 53%);
@@ -132,3 +133,34 @@ button:hover {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 400px) {
+  .submit-container {
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .fa-star {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 12px;
+  }
+  .btn {
+    margin-top: 30px;
+  }
+  .submit-btn {
+    height: 40px;
+    margin-bottom: 0px;
+    box-shadow: 0 0 15px 15px hsl(210, 19%, 16%);
+  }
+  .thank-you-container {
+    width: 305px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  h2 {
+    width: 305px;
+    padding: 0px;
+    font-weight: normal;
+  }
+}
